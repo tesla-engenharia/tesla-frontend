@@ -1,0 +1,22 @@
+{
+  "name": "tesla-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesla-engenharia/tesla-frontend.git"
+  },
+  "author": "Diretoria de Inovação Tecnológica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tesla-engenharia/tesla-frontend/issues"
+  },
+  "homepage": "https://github.com/tesla-engenharia/tesla-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
