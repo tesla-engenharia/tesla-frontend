@@ -21,8 +21,6 @@ $('#teamSlide').on('slide.bs.carousel', function (e) {
     }
 });
 
-
-
 (function () {
     var options = {
         whatsapp: "+55 63 9205-7905", // WhatsApp number
