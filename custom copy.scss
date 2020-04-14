@@ -17,7 +17,6 @@ $theme-colors: ("teslaBlue": #111227,
   h2 {
     font-size: 1.5em;
     font-weight: bold;
-    color: #fff;
   }
 
   h4 {
@@ -25,9 +24,7 @@ $theme-colors: ("teslaBlue": #111227,
   }
 
   p {
-    font-size: 1em;
-    color: #bbb;
-    hyphens: none;
+    font-size: 0.8em;
   }
 
   strong {
@@ -35,7 +32,6 @@ $theme-colors: ("teslaBlue": #111227,
     font-size: 1.5em;
   }
 }
-
 
 /* Removendo o sublinhado nos links do menu */
 .navbar .nav-item .nav-link {
@@ -66,6 +62,11 @@ $theme-colors: ("teslaBlue": #111227,
   transition-duration: 350ms;
 }
 
+.job-image {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
 .carousel-item {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -75,274 +76,18 @@ $theme-colors: ("teslaBlue": #111227,
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #0b0c1d;
-  background-image: url(img/tstroke.png);
-  background-size: 35rem;
-  background-repeat: no-repeat;
-  background-position: bottom right;
   border-top: 1px solid #28293a;
   border-bottom: 1px solid #28293a;
-
-  p {
-    padding-bottom: 1.2rem;
-    text-justify: left;
-  }
-
-  img {
-    padding-right: .6rem;
-  }
-
-
-  button {
-    background-color: #c00000;
-    border: 0px;
-    border-radius: 0.3rem;
-    width: 32rem;
-
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #fff;
-    }
-  }
-
-  select {
-    height: 2rem;
-    width: 32rem;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 0.3rem;
-    color: #090b1a;
-    padding-left: 1rem;
-  }
-
-  textarea {
-    border: none;
-    width: 32rem;
-    border-radius: 3px;
-    margin-bottom: 0.3rem;
-    padding-left: 1rem;
-    color: #090b1a;
-  }
-
-  input {
-    height: 2rem;
-    width: 32rem;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 0.3rem;
-    color: #090b1a;
-    padding-left: 1rem;
-  }
-
-  label {
-    color: #bbb
-  }
-
-  ::placeholder {
-    color: #bbb;
-  }
-
-  /* Estilizando o checkbox*/
-  @supports(-webkit-appearance: none) or (-moz-appearance: none) {
-
-    input[type='checkbox'],
-    input[type='radio'] {
-      --active: #275EFE;
-      --active-inner: #fff;
-      --focus: 2px rgba(39, 94, 254, .3);
-      --border: #BBC1E1;
-      --border-hover: #275EFE;
-      --background: #fff;
-      --disabled: #F6F8FF;
-      --disabled-inner: #E1E6F9;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      height: 21px;
-      outline: none;
-      display: inline-block;
-      vertical-align: top;
-      position: relative;
-      margin: 0;
-      cursor: pointer;
-      border: 1px solid var(--bc, var(--border));
-      background: var(--b, var(--background));
-      transition: background .3s, border-color .3s, box-shadow .2s;
-
-      &:after {
-        content: '';
-        display: block;
-        left: 0;
-        top: 0;
-        position: absolute;
-        transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
-      }
-
-      &:checked {
-        --b: var(--active);
-        --bc: var(--active);
-        --d-o: .3s;
-        --d-t: .6s;
-        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
-      }
-
-      &:disabled {
-        --b: var(--disabled);
-        cursor: not-allowed;
-        opacity: .9;
-
-        &:checked {
-          --b: var(--disabled-inner);
-          --bc: var(--border);
-        }
-
-        &+label {
-          cursor: not-allowed;
-        }
-      }
-
-      &:hover {
-        &:not(:checked) {
-          &:not(:disabled) {
-            --bc: var(--border-hover);
-          }
-        }
-      }
-
-      &:focus {
-        box-shadow: 0 0 0 var(--focus);
-      }
-
-      &:not(.switch) {
-        width: 21px;
-
-        &:after {
-          opacity: var(--o, 0);
-        }
-
-        &:checked {
-          --o: 1;
-        }
-      }
-
-      &+label {
-        font-size: 14px;
-        line-height: 21px;
-        display: inline-block;
-        vertical-align: top;
-        cursor: pointer;
-        margin-left: 4px;
-      }
-    }
-
-    input[type='checkbox'] {
-      &:not(.switch) {
-        border-radius: 7px;
-
-        &:after {
-          width: 5px;
-          height: 9px;
-          border: 2px solid var(--active-inner);
-          border-top: 0;
-          border-left: 0;
-          left: 7px;
-          top: 4px;
-          transform: rotate(var(--r, 20deg));
-        }
-
-        &:checked {
-          --r: 43deg;
-        }
-      }
-
-      &.switch {
-        width: 38px;
-        border-radius: 11px;
-
-        &:after {
-          left: 2px;
-          top: 2px;
-          border-radius: 50%;
-          width: 15px;
-          height: 15px;
-          background: var(--ab, var(--border));
-          transform: translateX(var(--x, 0));
-        }
-
-        &:checked {
-          --ab: var(--active-inner);
-          --x: 17px;
-        }
-
-        &:disabled {
-          &:not(:checked) {
-            &:after {
-              opacity: .6;
-            }
-          }
-        }
-      }
-    }
-
-    input[type='radio'] {
-      border-radius: 50%;
-
-      &:after {
-        width: 19px;
-        height: 19px;
-        border-radius: 50%;
-        background: var(--active-inner);
-        opacity: 0;
-        transform: scale(var(--s, .7));
-      }
-
-      &:checked {
-        --s: .5;
-      }
-    }
-  }
-
-
-
-}
-
-#portfolioPage {
-  background-color: #111227;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #28293a;
-  border-bottom: 1px solid #28293a;
-
-  img {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 1rem;
-    height: 22rem;
-  }
 
   h1 {
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #c00000;
-  }
-
-  .servico {
-    color: #c00000;
-    height: 3em;
-    text-align: center;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 0rem;
-
-    h2 {
-      color: #bbb;
-    }
-
+    color: #fff
   }
 
   h2 {
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
+    color: #fff
   }
 
   h4 {
@@ -353,7 +98,6 @@ $theme-colors: ("teslaBlue": #111227,
     color: #bbb;
     text-align: justify;
     text-justify: inter-word;
-    padding-bottom: 3rem;
   }
 
   strong {
@@ -370,17 +114,11 @@ $theme-colors: ("teslaBlue": #111227,
     text-decoration: none;
   }
 
-  #economia {
-    text-decoration: underline;
-    text-decoration-color: #c00000;
-  }
 
-  stroke {
-    text-decoration: underline;
-    text-decoration-color: #c00000;
-  }
+}
 
-
+#portfolioPage {
+  background-color: #111227;
 }
 
 #portfolio {
@@ -390,12 +128,6 @@ $theme-colors: ("teslaBlue": #111227,
   /* background-color: #0b0c1d; */
   border-top: 1px solid #28293a;
   border-bottom: 1px solid #28293a;
-
-  .job-image {
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-  }
-
 
   h1 {
     font-weight: bold;
@@ -517,7 +249,6 @@ $theme-colors: ("teslaBlue": #111227,
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #0b0c1d;
   }
 
   .client-pic {

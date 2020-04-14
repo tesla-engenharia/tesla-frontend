@@ -43,10 +43,10 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Início</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="portfolio.html" class="nav-link">Portfólio</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
                     <li class="nav-item" id="areadocliente">
@@ -58,63 +58,82 @@
         </div>
     </nav>
 
-    <div id="contato" class="row">
+    <div id="portfolioPage">
+
         <div class="container">
-            <div class="col-xs-12 col-lg-6 float-left">
-                <h2>Nos conte o que você precisa</h2>
-                <p>Fale conosco pelo formulario ou entre em contato por e-mail ou telefone.</p>
 
-                <h2>Onde nos encontrar</h2>
-                <p>Universidade Federal do Tocantins, Campus Palmas, Bloco B, sala 09</p>
+            <center>
+                <h1>Portfolio</h1>
+            </center>
 
-                <h2>Nossos contatos</h2>
-                <p>+55 63 99205-7905 <br />empresajuniortelsa@gmail.com</p>
-                <a id="instagram" href="#">
-                    <img class="icon" src="img/instagram.png" height=18rem>
-                </a>
-                <a id="facebook" href="#">
-                    <img class="icon" src="img/facebook.png" height=18rem>
-                </a>
-                <a id="linkedin" href="#">
-                    <img class="icon" src="img/linkedin.png" height=18rem>
-                </a>
+            <div class="row justify-content-around">
+                <div class="col-1">
+                    <img class="servico" src="img/sol-selecionado.png">
+                </div>
+                <div class="col-12">
+                    <h2 class="servico">Energia solar</h2>
+                </div>
             </div>
-            <div class="col-xs-12 col-lg-6 float-right">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="input_name" placeholder="Seu nome" required>
-                        <input type="number" class="form-control mr-auto" id="input_phone" placeholder="Seu telefone"
-                            required>
-                        <input type="email" class="form-control" id="input_email" placeholder="Seu email" required>
-                        <select class="form-control">
-                            <option value="0" selected disabled>Tipo de serviço</option>
-                            <option value="1">Proteção contra descargas elétricas</option>
-                            <option value="2">Projeto elétrico</option>
-                            <option value="3">Energia Solar</option>
-                            <option value="4">Eficiência energética</option>
-                            <option value="5">Automação</option>
-                            <option value="6">Outro</option>
-                        </select>
-                        <textarea class="form-control col-xs-12" rows="3" placeholder="Deixe uma mensagem"
-                            required></textarea>
-                        <input class=" from-control-file float-left col-auto" type="file" id="arquivo"
-                            placeholder="Anexar arquivo">
-                        <input class="form-control" type="checkbox" value="" id="checkbox">
-                        <label for="checkbox" class="col-form-label">Desejo receber novidades e promoções por
-                            e-mail</label>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
-                    </div>
-                </form>
+            <div class="project row">
+                <div class="col-sm-12 col-md-12 col-xl-5">
+                    <img class="job-image img-fluid" src="img/Job.jpg">
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-7">
+                    <h2>Projeto fotovoltaico</h2>
+                    <h4>Potência: <strong>8,03kWp</strong></h4>
+                    <h4>Economia mensal: <strong>R$897,77</strong></h4>
+                    <h4>Economia anual: <strong id="economia">R$10.733,28</strong></h4>
+                    <h4>Qtd. de placas: <strong>22</strong></h4>
+                    <p>Projetamos um sistema de geração distribuida de energia solar para a SOLUA em Miracema (TO). Com
+                        a
+                        energia gerada, os proprietários deixaram de se preocupar com a conta de luz e ainda tiveram a
+                        opção de
+                        abatar também a conta de energia de um apartamento localizado em Palams (TO)</p>
+                </div>
             </div>
+
+            <div class="row justify-content-around">
+                <div class="col-1">
+                    <img class="servico" src="img/projeto-eletrico-selecionado.png">
+                </div>
+                <div class="col-12">
+                    <h2 class="servico">Projeto elétrico</h2>
+                </div>
+            </div>
+            <div class="project row">
+                <div class="col-sm-12 col-md-12 col-xl-5">
+                    <img class="job-image img-fluid" src="img/Fluminense.png">
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-7">
+                    <h2>Projeto elétrico</h2>
+                    <p>Realizamos o projeto elétrico da Escolinha do Fluminense em Palmas (TO). O objetivo foi reformar
+                        toda a
+                        instalação da escolinha para garantir a eficiência e, sobretudo, a <stroke>segurança</stroke>
+                        dos
+                        alunos.</p>
+                </div>
+            </div>
+            <div class="project row">
+                <div class="col-sm-12 col-md-12 col-xl-5">
+                    <img class="job-image img-fluid" src="img/Medição agrupada.png">
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-7">
+                    <h2>Projeto de medição agrupada</h2>
+                    <p>Realizamos o projeto de medição agrupada em um conjunto de kitnets em Palmas (TO). Dentre os
+                        serviços
+                        inclusos no portfolio da <stroke>Tesla Engenharia</stroke>, este é o responsável pelo projeto
+                        que irá
+                        garantir a regulamentação frente à concessionária de energia local para o fornecimentos a
+                        multiplas
+                        unidades consumidoras, sendo também necessário para o incio do fornecimento de energia.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="map-responsive">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.005750691376!2d-48.36267258567581!3d-10.180187292727739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cae2ee7be2dd%3A0x4317439a5a1f3d73!2sTesla%20Engenharia!5e0!3m2!1sen!2sbr!4v1585878630110!5m2!1sen!2sbr"
-            width=100% height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
+
 
     <!-- Footer -->
     <div>
@@ -124,7 +143,7 @@
                 <div class="row justify-content-between align-items-center">
 
                     <div id="icons" class="col-xl-4 col-lg-5 col-xs-12">
-                        <a id="logoFooter" href="#"> target="_blank"
+                        <a id="logoFooter" href="#" target="_blank">
                             <img src="img/Logo.png" height=45rem>
                         </a>
                         <a id="instagram" href="#" target="_blank">
@@ -139,7 +158,7 @@
                         <a id="whatsapp" href="#" target="_blank">
                             <img class="icon" src="img/whatsapp.png" height=18rem>
                         </a>
-                        <a id="telefone" href="#" target="_blank">63 99205-7905</a>
+                        <a id="telefone" href="#">63 99205-7905</a>
                     </div>
                     <div id="solicitar" class="col-xl-3 col-lg-4 col-xs-12">
                         <a href="contato.html">Solicitar orçamento grátis</a>
@@ -157,7 +176,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

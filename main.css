@@ -1,182 +1,7 @@
 @charset "UTF-8";
+
 /* Adicionando cores da identidade visual Tesla Engenharia */
 /* Fonte para todo o site */
-
-::-moz-selection {
-  /* Code for Firefox */
-  color: #fff;
-  background: #c00000;
-}
-
-::selection {
-  color: #fff;
-  background: #c00000;
-}
-
-
-.form-contact {
-  width: 100%;
-  font-family: "Arial";
-}
-
-.form-contact-input {
-  width: 47%;
-  color: #292929;
-  font-size: 16px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-}
-
-
-.form-contact-input1 {
-  width: 96%;
-  color: #292929;
-  font-size: 16px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 5px;
-  height: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-}
-
-
-
-.form-contact-textarea {
-  width: 96%;
-  color: #292929;
-  font-size: 16px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 5px;
-  height: 150px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-  padding-top: 16px;
-  padding-left: 0;
-  padding-right: 0;
-  font-family: "Arial";
-}
-
-.form-contact-button {
-  width: 47%;
-  font-size: 16px;
-  border-radius: 5px;
-  color: #fff;
-  height: 40px;
-
-  margin-bottom: 20px;
-  cursor: pointer;
-  background: #c00000;
-  display: block;
-  border: none;
-  border-bottom: 1px solid #500707;
-  border-right: 1px solid #500707;
-  transition: 1s;
-  align-items: right;
-}
-
-.form-contact-button:hover {
-  opacity: 1;
-  align-items: right;
-}
-
-/* Style the form - display items horizontally */
-.form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  width: 100%;
-  font-family: "Arial";
-}
-
-/* Add some margins for each label */
-
-/* Style the input fields */
-.form-inline input {
-  vertical-align: middle;
-  margin: 0px 10px 10px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-/* Style the submit button */
-.form-inline button {}
-
-
-
-
-.select-css {
-  opacity: 1;
-  width: 47%;
-  color: #292929;
-  font-size: 16px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 40px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-  opacity: 1;
-}
-
-
-
-
-
-
-
-
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 1px 0;
-  }
-
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 50%;
-  position: relative;
-  height: 0;
-}
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
 * {
   font-family: Roboto;
 }
@@ -184,12 +9,12 @@
 * h1 {
   font-size: 2em;
   font-weight: bold;
-  font-family: Roboto;
 }
 
 * h2 {
   font-size: 1.5em;
   font-weight: bold;
+  color: #fff;
 }
 
 * h4 {
@@ -197,7 +22,9 @@
 }
 
 * p {
-  font-size: 0.8em;
+  font-size: 1em;
+  color: #bbb;
+  hyphens: none;
 }
 
 * strong {
@@ -234,14 +61,315 @@
   transition-duration: 350ms;
 }
 
-.job-image {
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-}
-
 .carousel-item {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+#contato {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #0b0c1d;
+  background-image: url(img/tstroke.png);
+  background-size: 35rem;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-top: 1px solid #28293a;
+  border-bottom: 1px solid #28293a;
+  /* Estilizando o checkbox*/
+}
+
+#contato p {
+  padding-bottom: 1.2rem;
+  text-justify: left;
+}
+
+#contato img {
+  padding-right: 0.6rem;
+}
+
+#contato button {
+  background-color: #c00000;
+  border: 0px;
+  border-radius: 0.3rem;
+  width: 32rem;
+}
+
+#contato button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+#contato select {
+  height: 2rem;
+  width: 32rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+  color: #090b1a;
+  padding-left: 1rem;
+}
+
+#contato textarea {
+  border: none;
+  width: 32rem;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+  padding-left: 1rem;
+  color: #090b1a;
+}
+
+#contato input {
+  height: 2rem;
+  width: 32rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+  color: #090b1a;
+  padding-left: 1rem;
+}
+
+#contato label {
+  color: #bbb;
+}
+
+#contato ::placeholder {
+  color: #bbb;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+
+  #contato input[type=checkbox],
+  #contato input[type=radio] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+
+  #contato input[type=checkbox]:after,
+  #contato input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+  }
+
+  #contato input[type=checkbox]:checked,
+  #contato input[type=radio]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+
+  #contato input[type=checkbox]:disabled,
+  #contato input[type=radio]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+
+  #contato input[type=checkbox]:disabled:checked,
+  #contato input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+
+  #contato input[type=checkbox]:disabled+label,
+  #contato input[type=radio]:disabled+label {
+    cursor: not-allowed;
+  }
+
+  #contato input[type=checkbox]:hover:not(:checked):not(:disabled),
+  #contato input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+
+  #contato input[type=checkbox]:focus,
+  #contato input[type=radio]:focus {
+    box-shadow: 0 0 0 var(--focus);
+  }
+
+  #contato input[type=checkbox]:not(.switch),
+  #contato input[type=radio]:not(.switch) {
+    width: 21px;
+  }
+
+  #contato input[type=checkbox]:not(.switch):after,
+  #contato input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+
+  #contato input[type=checkbox]:not(.switch):checked,
+  #contato input[type=radio]:not(.switch):checked {
+    --o: 1;
+  }
+
+  #contato input[type=checkbox]+label,
+  #contato input[type=radio]+label {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  #contato input[type=checkbox]:not(.switch) {
+    border-radius: 7px;
+  }
+
+  #contato input[type=checkbox]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    transform: rotate(var(--r, 20deg));
+  }
+
+  #contato input[type=checkbox]:not(.switch):checked {
+    --r: 43deg;
+  }
+
+  #contato input[type=checkbox].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+
+  #contato input[type=checkbox].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    transform: translateX(var(--x, 0));
+  }
+
+  #contato input[type=checkbox].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+
+  #contato input[type=checkbox].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+
+  #contato input[type=radio] {
+    border-radius: 50%;
+  }
+
+  #contato input[type=radio]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    transform: scale(var(--s, 0.7));
+  }
+
+  #contato input[type=radio]:checked {
+    --s: .5;
+  }
+}
+
+#portfolioPage {
+  background-color: #111227;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #28293a;
+  border-bottom: 1px solid #28293a;
+}
+
+#portfolioPage img {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 1rem;
+  height: 22rem;
+}
+
+#portfolioPage h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #c00000;
+}
+
+#portfolioPage .servico {
+  color: #c00000;
+  height: 3em;
+  text-align: center;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+}
+
+#portfolioPage .servico h2 {
+  color: #bbb;
+}
+
+#portfolioPage h2 {
+  padding-bottom: 0rem;
+}
+
+#portfolioPage h4 {
+  color: #bbb;
+}
+
+#portfolioPage p {
+  color: #bbb;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 3rem;
+}
+
+#portfolioPage strong {
+  color: #fff;
+}
+
+#portfolioPage a {
+  color: #c00000;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#portfolioPage a:hover {
+  text-decoration: none;
+}
+
+#portfolioPage #economia {
+  text-decoration: underline;
+  text-decoration-color: #c00000;
+}
+
+#portfolioPage stroke {
+  text-decoration: underline;
+  text-decoration-color: #c00000;
 }
 
 #portfolio {
@@ -253,40 +381,9 @@
   border-bottom: 1px solid #28293a;
 }
 
-#contato {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  background: linear-gradient(#090b1a, #0b0c1d, #090b1a);
-  background-color: #0b0c1d;
-  border-top: 1px solid #28293a;
-  border-bottom: 1px solid #28293a;
-  background-image: url(img/tstroke.png);
-  background-size: 40rem;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
-
-#contato h1 {
-  color: #fff;
-}
-
-#contato h2 {
-  color: #fff;
-}
-
-#contato h4 {
-  color: #bbb;
-}
-
-#contato p {
-  color: #bbb;
-  text-align: justify;
-  text-justify: inter-word;
-  padding-bottom: 1.515:17 21/01/2020rem;
-}
-
-#form p {
-  margin-bottom: 0.0001rem;
+#portfolio .job-image {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 #portfolio h1 {
@@ -406,6 +503,7 @@
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #0b0c1d;
 }
 
 #oquedizem .client-pic {
@@ -639,20 +737,6 @@
   }
 }
 
-#footer1 {
-  padding-top: 1rem;
-  background-color: #0b0c1d;
-
-}
-
-#footer1 .icon {
-  padding-right: 0rem;
-}
-
-#footer1 a:hover {
-  text-decoration: none;
-}
-
 #footer {
   padding-top: 1rem;
   background-color: #0b0c1d;
@@ -666,7 +750,6 @@
 #footer a:hover {
   text-decoration: none;
 }
-
 
 #logoFooter {
   padding-right: 2rem;
@@ -692,82 +775,6 @@
 #telefone:hover {
   text-decoration: none;
 }
-
-
-#soli {
-  color: #ffff;
-  font-weight: bolder;
-  padding-top: 0.2rem;
-}
-
-#soli:hover {
-  text-decoration: none;
-}
-
-#instagram {
-  color: #bbbbbb;
-  font-weight: bolder;
-  padding-top: 0.2rem;
-}
-
-
-#instagram:hover {
-  text-decoration: none;
-}
-
-
-#instagram1 {
-  color: #bbbbbb;
-  padding-top: 0.2rem;
-}
-
-
-#instagram1:hover {
-  text-decoration: none;
-}
-
-
-#facebook {
-  color: #bbbbbb;
-  font-weight: bolder;
-  padding-top: 0.2rem;
-}
-
-#facebook:hover {
-  text-decoration: none;
-}
-
-
-#facebook1 {
-  color: #bbbbbb;
-  padding-top: 0.2rem;
-}
-
-#facebook1:hover {
-  text-decoration: none;
-}
-
-
-#linkedin {
-  color: #bbbbbb;
-  font-weight: bolder;
-  padding-top: 0.2rem;
-}
-
-#linkedin:hover {
-  text-decoration: none;
-}
-
-
-#linkedin1 {
-  color: #bbbbbb;
-  padding-top: 0.2rem;
-}
-
-#linkedin1:hover {
-  text-decoration: none;
-}
-
 
 #solicitar a {
   color: #c00000;
