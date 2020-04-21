@@ -1,214 +1,160 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/T.png" />
-    <title>Nosso portfolio | Tesla Engenharia</title>
-    <!--     <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/T.png" />
+  <title>Nosso portfolio | Tesla Engenharia</title>
+  <!--     <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous"
         /> -->
-    <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
 
-    <script type="text/javascript" src="scripts.js"></script>
-    <style></style>
-  </head>
+  <script type="text/javascript" src="scripts.js"></script>
+  <style></style>
+</head>
 
-  <body>
-    <!-- Menu -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-teslaBlue py-2 font-weight-bold"
-    >
-      <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <img src="img/Logo.png" height="50" />
+<body>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-teslaBlue py-2 font-weight-bold">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/Logo.png" height="50" />
+      </a>
+      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#teslaMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="teslaMenu">
+        <ul class="row navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+          </li>
+          <li class="nav-item active">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <!-- <li class="nav-item" id="areadocliente">
+            <a href="#" class="nav-link">Área do cliente</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="contato" class="row">
+    <div class="container">
+      <div class="col-xs-12 col-lg-6 float-left">
+        <h2>Nos conte o que você precisa</h2>
+        <p>
+          Fale conosco pelo formulario ou entre em contato por e-mail ou
+          telefone.
+        </p>
+
+        <h2>Onde nos encontrar</h2>
+        <p>
+          Universidade Federal do Tocantins, Campus Palmas, Bloco B, sala 09
+        </p>
+
+        <h2>Nossos contatos</h2>
+        <p>+55 63 99205-7905 <br />empresajuniortelsa@gmail.com</p>
+        <a id="instagram" href="#">
+          <img class="icon" src="img/instagram.png" height="18rem" />
         </a>
-        <button
-          class="navbar-toggler custom-toggler"
-          data-toggle="collapse"
-          data-target="#teslaMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="teslaMenu">
-          <ul class="row navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Início</a>
-            </li>
-            <li class="nav-item">
-              <a href="portfolio.html" class="nav-link">Portfólio</a>
-            </li>
-            <li class="nav-item active">
-              <a href="contato.html" class="nav-link">Contato</a>
-            </li>
-            <li class="nav-item" id="areadocliente">
-              <a href="#" class="nav-link">Área do cliente</a>
-            </li>
-          </ul>
-        </div>
+        <a id="facebook" href="#">
+          <img class="icon" src="img/facebook.png" height="18rem" />
+        </a>
+        <a id="linkedin" href="#">
+          <img class="icon" src="img/linkedin.png" height="18rem" />
+        </a>
       </div>
-    </nav>
+      <div class="col-xs-12 col-lg-6 float-right">
+        <form action="https://submit-form.com/BCVQ-MVG3gmzcg643wKMM">
+          <div class="form-group">
+            <input type="text" class="form-control" name="Nome" placeholder="Seu nome" required />
+            <input type="number" class="form-control mr-auto" name="Telefone" placeholder="Seu telefone" required />
+            <input type="email" class="form-control" name="E-mail" placeholder="Seu email" required />
+            <select class="form-control" name="Serviço">
+              <option value="0" selected disabled>Tipo de serviço</option>
+              <option value="1">Proteção contra descargas elétricas</option>
+              <option value="2">Projeto elétrico</option>
+              <option value="3">Energia Solar</option>
+              <option value="4">Eficiência energética</option>
+              <option value="5">Automação</option>
+              <option value="6">Outro</option>
+            </select>
+            <textarea class="form-control col-xs-12" rows="4" placeholder="Deixe uma mensagem" name="Mensagem"
+              required></textarea>
+            <input class="form-control" type="checkbox" name="Concorda com marketing." />
+            <label for="checkbox" class="col-form-label">Desejo receber novidades e promoções por e-mail</label>
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar mensagem
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <div id="contato" class="row">
+  <div class="map-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.005750691376!2d-48.36267258567581!3d-10.180187292727739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cae2ee7be2dd%3A0x4317439a5a1f3d73!2sTesla%20Engenharia!5e0!3m2!1sen!2sbr!4v1585878630110!5m2!1sen!2sbr"
+      width="100%" height="400" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+
+  <!-- Footer -->
+  <div>
+    <div id="footer">
       <div class="container">
-        <div class="col-xs-12 col-lg-6 float-left">
-          <h2>Nos conte o que você precisa</h2>
-          <p>
-            Fale conosco pelo formulario ou entre em contato por e-mail ou
-            telefone.
-          </p>
-
-          <h2>Onde nos encontrar</h2>
-          <p>
-            Universidade Federal do Tocantins, Campus Palmas, Bloco B, sala 09
-          </p>
-
-          <h2>Nossos contatos</h2>
-          <p>+55 63 99205-7905 <br />empresajuniortelsa@gmail.com</p>
-          <a id="instagram" href="#">
-            <img class="icon" src="img/instagram.png" height="18rem" />
-          </a>
-          <a id="facebook" href="#">
-            <img class="icon" src="img/facebook.png" height="18rem" />
-          </a>
-          <a id="linkedin" href="#">
-            <img class="icon" src="img/linkedin.png" height="18rem" />
-          </a>
-        </div>
-        <div class="col-xs-12 col-lg-6 float-right">
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="input_name"
-                placeholder="Seu nome"
-                required
-              />
-              <input
-                type="number"
-                class="form-control mr-auto"
-                id="input_phone"
-                placeholder="Seu telefone"
-                required
-              />
-              <input
-                type="email"
-                class="form-control"
-                id="input_email"
-                placeholder="Seu email"
-                required
-              />
-              <select class="form-control">
-                <option value="0" selected disabled>Tipo de serviço</option>
-                <option value="1">Proteção contra descargas elétricas</option>
-                <option value="2">Projeto elétrico</option>
-                <option value="3">Energia Solar</option>
-                <option value="4">Eficiência energética</option>
-                <option value="5">Automação</option>
-                <option value="6">Outro</option>
-              </select>
-              <textarea
-                class="form-control col-xs-12"
-                rows="3"
-                placeholder="Deixe uma mensagem"
-                required
-              ></textarea>
-              <input
-                class="from-control-file float-left col-auto"
-                type="file"
-                id="arquivo"
-                placeholder="Anexar arquivo"
-              />
-              <input
-                class="form-control"
-                type="checkbox"
-                value=""
-                id="checkbox"
-              />
-              <label for="checkbox" class="col-form-label"
-                >Desejo receber novidades e promoções por e-mail</label
-              >
-              <button type="submit" class="btn btn-primary btn-block">
-                Enviar mensagem
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="map-responsive">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.005750691376!2d-48.36267258567581!3d-10.180187292727739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cae2ee7be2dd%3A0x4317439a5a1f3d73!2sTesla%20Engenharia!5e0!3m2!1sen!2sbr!4v1585878630110!5m2!1sen!2sbr"
-        width="100%"
-        height="400"
-        frameborder="0"
-        style="border: 0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-    </div>
-
-    <!-- Footer -->
-    <div>
-      <div id="footer">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div id="icons" class="col-xl-4 col-lg-5 col-xs-12">
-              <a id="logoFooter" href="#" target="_blank">
-                <img src="img/Logo.png" height="45rem" />
-              </a>
-              <a id="instagram" href="#" target="_blank">
-                <img class="icon" src="img/instagram.png" height="18rem" />
-              </a>
-              <a id="facebook" href="#" target="_blank">
-                <img class="icon" src="img/facebook.png" height="18rem" />
-              </a>
-              <a id="linkedin" href="#" target="_blank">
-                <img class="icon" src="img/linkedin.png" height="18rem" />
-              </a>
-              <a id="whatsapp" href="#" target="_blank">
-                <img class="icon" src="img/whatsapp.png" height="18rem" />
-              </a>
-              <a id="telefone" href="#" target="_blank">63 99205-7905</a>
-            </div>
-            <div id="solicitar" class="col-xl-3 col-lg-4 col-xs-12">
-              <a href="contato.html">Solicitar orçamento grátis</a>
-            </div>
+        <div class="row justify-content-between align-items-center">
+          <div id="icons" class="col-xl-4 col-lg-5 col-xs-12">
+            <a id="logoFooter" href="#" target="_blank">
+              <img src="img/Logo.png" height="45rem" />
+            </a>
+            <a id="instagram" href="#" target="_blank">
+              <img class="icon" src="img/instagram.png" height="18rem" />
+            </a>
+            <a id="facebook" href="#" target="_blank">
+              <img class="icon" src="img/facebook.png" height="18rem" />
+            </a>
+            <a id="linkedin" href="#" target="_blank">
+              <img class="icon" src="img/linkedin.png" height="18rem" />
+            </a>
+            <a id="whatsapp" href="#" target="_blank">
+              <img class="icon" src="img/whatsapp.png" height="18rem" />
+            </a>
+            <a id="telefone" href="#" target="_blank">63 99205-7905</a>
+          </div>
+          <div id="solicitar" class="col-xl-3 col-lg-4 col-xs-12">
+            <a href="contato.html">Solicitar orçamento grátis</a>
           </div>
         </div>
       </div>
-      <div id="footer2">
-        <div id="copyright" class="container">
-          <h5 class="float-right">&copy 2020 Tesla Engenharia</h5>
-        </div>
+    </div>
+    <div id="footer2">
+      <div id="copyright" class="container">
+        <h5 class="float-right">&copy 2020 Tesla Engenharia</h5>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
