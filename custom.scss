@@ -1,9 +1,11 @@
 /* Adicionando cores da identidade visual Tesla Engenharia */
-$theme-colors: ("teslaBlue": #111227,
+$theme-colors: (
+  "teslaBlue": #111227,
   "teslaRed": #c00000,
   "teslaDarkBlue": #0b0c1d,
   "teslaGrey": #bbbbbb,
-  "teslaWhite": #ffffff);
+  "teslaWhite": #ffffff,
+);
 
 /* Fonte para todo o site */
 html {
@@ -36,7 +38,6 @@ html {
   }
 }
 
-
 /* Removendo o sublinhado nos links do menu */
 .navbar .nav-item .nav-link {
   text-decoration: none;
@@ -49,7 +50,7 @@ html {
   padding-right: 0rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-right: 1
+  margin-right: 1;
 }
 
 /* Personalisação da Área do cliente */
@@ -88,9 +89,8 @@ html {
   }
 
   img {
-    padding-right: .6rem;
+    padding-right: 0.6rem;
   }
-
 
   button {
     background-color: #c00000;
@@ -135,7 +135,7 @@ html {
   }
 
   label {
-    color: #bbb
+    color: #bbb;
   }
 
   ::placeholder {
@@ -143,18 +143,17 @@ html {
   }
 
   /* Estilizando o checkbox*/
-  @supports(-webkit-appearance: none) or (-moz-appearance: none) {
-
-    input[type='checkbox'],
-    input[type='radio'] {
-      --active: #275EFE;
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type="checkbox"],
+    input[type="radio"] {
+      --active: #275efe;
       --active-inner: #fff;
-      --focus: 2px rgba(39, 94, 254, .3);
-      --border: #BBC1E1;
-      --border-hover: #275EFE;
+      --focus: 2px rgba(39, 94, 254, 0.3);
+      --border: #bbc1e1;
+      --border-hover: #275efe;
       --background: #fff;
-      --disabled: #F6F8FF;
-      --disabled-inner: #E1E6F9;
+      --disabled: #f6f8ff;
+      --disabled-inner: #e1e6f9;
       -webkit-appearance: none;
       -moz-appearance: none;
       height: 21px;
@@ -166,36 +165,37 @@ html {
       cursor: pointer;
       border: 1px solid var(--bc, var(--border));
       background: var(--b, var(--background));
-      transition: background .3s, border-color .3s, box-shadow .2s;
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 
       &:after {
-        content: '';
+        content: "";
         display: block;
         left: 0;
         top: 0;
         position: absolute;
-        transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+          opacity var(--d-o, 0.2s);
       }
 
       &:checked {
         --b: var(--active);
         --bc: var(--active);
-        --d-o: .3s;
-        --d-t: .6s;
-        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+        --d-o: 0.3s;
+        --d-t: 0.6s;
+        --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
       }
 
       &:disabled {
         --b: var(--disabled);
         cursor: not-allowed;
-        opacity: .9;
+        opacity: 0.9;
 
         &:checked {
           --b: var(--disabled-inner);
           --bc: var(--border);
         }
 
-        &+label {
+        & + label {
           cursor: not-allowed;
         }
       }
@@ -224,7 +224,7 @@ html {
         }
       }
 
-      &+label {
+      & + label {
         font-size: 14px;
         line-height: 21px;
         display: inline-block;
@@ -234,7 +234,7 @@ html {
       }
     }
 
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       &:not(.switch) {
         border-radius: 7px;
 
@@ -276,14 +276,14 @@ html {
         &:disabled {
           &:not(:checked) {
             &:after {
-              opacity: .6;
+              opacity: 0.6;
             }
           }
         }
       }
     }
 
-    input[type='radio'] {
+    input[type="radio"] {
       border-radius: 50%;
 
       &:after {
@@ -292,17 +292,14 @@ html {
         border-radius: 50%;
         background: var(--active-inner);
         opacity: 0;
-        transform: scale(var(--s, .7));
+        transform: scale(var(--s, 0.7));
       }
 
       &:checked {
-        --s: .5;
+        --s: 0.5;
       }
     }
   }
-
-
-
 }
 
 #portfolioPage {
@@ -338,7 +335,6 @@ html {
     h2 {
       color: #bbb;
     }
-
   }
 
   h2 {
@@ -379,8 +375,6 @@ html {
     text-decoration: underline;
     text-decoration-color: #c00000;
   }
-
-
 }
 
 #portfolio {
@@ -396,16 +390,15 @@ html {
     padding-bottom: 2rem;
   }
 
-
   h1 {
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #fff
+    color: #fff;
   }
 
   h2 {
     padding-bottom: 2rem;
-    color: #fff
+    color: #fff;
   }
 
   h4 {
@@ -441,7 +434,6 @@ html {
     text-decoration: underline;
     text-decoration-color: #c00000;
   }
-
 }
 
 #oqueprecisa {
@@ -466,7 +458,7 @@ html {
   }
 
   h3 {
-    color: #fff
+    color: #fff;
   }
 
   p {
@@ -489,9 +481,7 @@ html {
       color: #fff;
     }
   }
-
 }
-
 
 #oquedizem {
   background-color: #fff;
@@ -525,6 +515,9 @@ html {
     margin-bottom: 2rem;
   }
 
+  h4 {
+    padding-top: 1rem;
+  }
 }
 
 #quemsomos {
@@ -532,14 +525,11 @@ html {
   padding-top: 3rem;
   padding-bottom: 3rem;
 
-
-
   h1 {
     color: #c00000;
     font-weight: bold;
     padding-bottom: 3rem;
   }
-
 
   h2 {
     padding-top: 2rem;
@@ -554,8 +544,6 @@ html {
     font-size: 1rem;
     font-weight: bold;
   }
-
-
 
   h4 {
     color: #bbb;
@@ -575,11 +563,9 @@ html {
       text-decoration: underline;
       text-decoration-color: #c00000;
     }
-
   }
 
   .valores {
-
     h3 {
       text-align: center;
       color: #c00000;
@@ -599,10 +585,12 @@ html {
 
   /* Team slide */
   @media (min-width: 768px) and (max-width: 991px) {
-
-
     /* Show 4th slide on md if col-md-4*/
-    .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-md-4.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -33.3333%;
@@ -614,9 +602,11 @@ html {
   }
 
   @media (min-width: 576px) and (max-width: 768px) {
-
     /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-sm-6.carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -50%;
@@ -633,12 +623,15 @@ html {
     }
 
     /* show 2 items */
-    .carousel-inner .active+.carousel-item {
+    .carousel-inner .active + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item {
       transition: none;
     }
 
@@ -648,9 +641,9 @@ html {
     }
 
     /* left or forward direction */
-    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left+.carousel-item,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item {
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
@@ -667,9 +660,9 @@ html {
     }
 
     /* right or prev direction */
-    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right+.carousel-item,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item {
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -680,13 +673,15 @@ html {
 
   /* MD */
   @media (min-width: 768px) {
-
     /* show 3rd of 3 item slide */
-    .carousel-inner .active+.carousel-item+.carousel-item {
+    .carousel-inner .active + .carousel-item + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item {
       transition: none;
     }
 
@@ -696,14 +691,20 @@ html {
     }
 
     /* left or forward direction */
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
     }
 
     /* right or prev direction */
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -714,18 +715,26 @@ html {
 
   /* LG */
   @media (min-width: 991px) {
-
     /* show 4th item */
-    .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       transition: none;
     }
 
     /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-lg-3.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -25%;
@@ -736,14 +745,22 @@ html {
     }
 
     /* left or forward direction */
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
     }
 
     /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -751,7 +768,6 @@ html {
       visibility: visible;
     }
   }
-
 }
 
 #resumo {
@@ -825,4 +841,4 @@ html {
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/carousel";
-@import "node_modules/bootstrap/scss/media"
+@import "node_modules/bootstrap/scss/media";

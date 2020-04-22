@@ -1,317 +1,351 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/x-icon" href="img/T.png">
-  <title>Tesla Engenharia</title>
-  <!--     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/T.png" />
+    <title>Tesla Engenharia</title>
+    <!--     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     /> -->
-  <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css" />
 
-  <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-  <!-- Menu -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-teslaBlue py-2 font-weight-bold">
-    <div class="container">
-      <a href="#" class="navbar-brand">
-        <img src="img/logo.png" height="50" />
-      </a>
-      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#teslaMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="teslaMenu">
-        <ul class="row navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link">Início</a>
-          </li>
-          <li class="nav-item">
-            <a href="portfolio.html" class="nav-link">Portfólio</a>
-          </li>
-          <li class="nav-item">
-            <a href="contato.html" class="nav-link">Contato</a>
-          </li>
-          <!-- <li class="nav-item" id="areadocliente">
+  <body>
+    <!-- Menu -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-teslaBlue py-2 font-weight-bold"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo.png" height="50" />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          data-toggle="collapse"
+          data-target="#teslaMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="teslaMenu">
+          <ul class="row navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="sobre_nos.html" class="nav-link">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.html" class="nav-link">Contato</a>
+            </li>
+            <!-- <li class="nav-item" id="areadocliente">
             <a href="#" class="nav-link">Área do cliente</a>
           </li> -->
-        </ul>
-
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Slide -->
-  <div id="portfolio" class="carousel slide" data-ride="carousel">
-    <div class="container">
-      <div>
-        <center>
-          <h1 id="title">Nossos últimos projetos</h1>
-        </center>
-
-        <div class="carousel-inner slides">
-          <div class="carousel-item active">
-            <img class="job-image col-xs-12 col-lg-6 float-left img-fluid" src="img/Job.jpg" alt="First slide">
-            <div>
-              <h2>Projeto fotovoltaico</h2>
-              <h4>Potência: <strong>8,03kWp</strong></h4>
-              <h4>Economia mensal: <strong>R$897,77</strong></h4>
-              <h4>Economia anual: <strong id="economia">R$10.733,28</strong></h4>
-              <h4>Qtd. de placas: <strong>22</strong></h4>
-              <p>Projetamos um sistema de geração distribuida de energia solar para a SOLUA em Miracema (TO). Com a
-                energia gerada, os proprietários deixaram de se preocupar com a conta de luz e ainda tiveram a opção de
-                abatar também a conta de energia de um apartamento localizado em Palams (TO)</p>
-              <a href="contato.html" id=" call_to_action">Solicitar um orçamento grátis</a>
-            </div>
-          </div>
-
-          <div class=" carousel-item">
-            <img class="job-image col-xs-12 col-lg-6 float-left img-fluid" src="img/Fluminense.png" alt="Second slide">
-            <div class=" col-xs-12 col-lg-6 float-right">
-              <h2>Projeto elétrico</h2>
-              <p>Realizamos o projeto elétrico da Escolinha do Fluminense em Palmas (TO). O objetivo foi reformar toda a
-                instalação da escolinha para garantir a eficiência e, sobretudo, a <stroke>segurança</stroke> dos
-                alunos.</p>
-              <a href="contato.html" id=" call_to_action">Solicitar um orçamento grátis</a>
-            </div>
-          </div>
-
-          <div class=" carousel-item">
-            <img class="job-image col-xs-12 col-lg-6 float-left img-fluid" src="img/Medição agrupada.png"
-              alt="Second slide">
-            <div class=" col-xs-12 col-lg-6 float-right">
-              <h2>Projeto de medição agrupada</h2>
-              <p>Realizamos o projeto de medição agrupada em um conjunto de kitnets em Palmas (TO). Dentre os serviços
-                inclusos no portfolio da <stroke>Tesla Engenharia</stroke>, este é o responsável pelo projeto que irá
-                garantir a regulamentação frente à concessionária de energia local para o fornecimentos a multiplas
-                unidades consumidoras, sendo também necessário para o incio do fornecimento de energia.
-              </p>
-              <a href="contato.html" id=" call_to_action">Solicitar um orçamento grátis</a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <a class="carousel-control-prev" href="#portfolio" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#portfolio" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- O que você precisa? -->
-  <div id="oqueprecisa">
-    <div class="container">
-      <center>
-        <h1>O que você precisa?</h1>
-      </center>
-
-      <!-- Serviços -->
-      <div class="row">
-
-        <div id="SPDA" class="col-xs-12 col-lg-6 d-flex service">
-          <div class="col-2">
-            <img class="img-fluid" src="img/raio.png" height=40rem>
-          </div>
-          <div>
-            <h3 class="servico">Proteção contra descargas elétricas</h3>
-            <p class="servico_descricao">O Tocantins é o estado com maior incidência de raios em todo o país, o que
-              representa um grande risco a estruturas, equipamentos e pessoas. Por isso, é importante possuir um Sistema
-              de Proteção Contra Descargas Elétricas eficiente e bem projetado.</p>
-          </div>
-        </div>
-
-        <div id="Projeto Elétrico" class="col-xs-12 col-lg-6 d-flex service">
-          <div class="col-2">
-            <img class="img-fluid" src="img/projeto-eletrico.png" height=40rem>
-          </div>
-          <div>
-            <h3 class="servico">Projeto elétrico</h3>
-            <p class="servico_descricao">O projeto elétrico é responsável por planejar toda sua instalação e garantir
-              sua segurança e durabilidade; revine acidentes, futuros problemas e o desperdício de energia e dinheiro.
-              A Tesla Engenharia realiza projetos elétricos de instalações residenciais e comerciais personalizado a
-              suas necessidades.</p>
-          </div>
-        </div>
-
-        <div id="Energia solar" class="col-xs-12 col-lg-6 d-flex service">
-          <div class="col-2">
-            <img class="img-fluid" src="img/sol.png" height=40rem>
-          </div>
-          <div>
-            <h3 class="servico">Energia solar</h3>
-            <p class="servico_descricao">Investir em energia solar pode render mais que qualquer investimento em renda
-              fixa. Numa região com uma das tarifas de energia mais caras do país, a Tesla Engenharia te dá a
-              oportunidade de gerar a própria energia e ser livre de preocupações com a conta de luz e bandeiras
-              tarifárias.</p>
-          </div>
-        </div>
-
-        <div id="Eficiência energética" class="col-xs-12 col-lg-6 d-flex service">
-          <div class="col-2">
-            <img class="img-fluid" src="img/eficiencia.png" height=40rem>
-          </div>
-          <div>
-            <h3 class="servico">Eficiência energética</h3>
-            <p class="servico_descricao">Problemas na instalação elétrica e mau uso dos recursos pode trazer eleveados e
-              desnecessários custos ao consumidor. A Tesla Engenharia pode trabalhar a eficiência energética de seu
-              estabelecimento e ajudar a reduzir suas despesas com a conta de energia.</p>
-          </div>
-        </div>
-
-        <div id="Automação" class="col-xs-12 col-lg-6 d-flex service">
-          <div class="col-2">
-            <img class="img-fluid" src="img/automacao.png" height=40rem>
-          </div>
-          <div>
-            <h3 class="servico">Automação</h3>
-            <p class="servico_descricao">A Industria 4.0 está revolucionando o modo como produzimos e, métodos antes
-              largamente utilzados, hoje se tornaram infecientes e incapazes de acompanhar o rápido desenvolvimento da
-              tecnologia. Para garantir sua permanência no mercado, é preciso inovar e estar sempre buscando novas
-              maneiras de produzir e resolver problemas. Pensando nisso, a Tesla Engenharia fornece soluções em
-              Automação (industrial e residencial) customizados às suas necessidades.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <center><button><a href="contato.html">Solicitar um orçamento grátis</a></button></center>
-
-    </div>
-
-  </div>
-
-  <!-- O que dizem sobre a Tesla Engenharia? -->
-  <div id="oquedizem">
-
-    <div id="evaluations" class="carousel slide" data-ride="carousel">
-
-      <div>
-
-        <center>
-          <h1>O que dizem sobre a Tesla Engenharia</h1>
-          <div class=" carousel-inner slides">
-
-            <div class="carousel-item active">
-              <img class="client-pic img-fluid" src="img/pessoa.png" alt="First slide" width=90rem>
-              <div class="avaliacao">
-                <p>A Tesla presta um bom serviço: ótimo atendimento, cumpre rigorosamente os prazos e faz tudo conforme
-                  o que propõe fazer.</p>
-                <h4 class="autor">Marlene Laskoski de Alencar</h4>
-              </div>
-            </div>
-
-            <div class=" carousel-item">
-              <img class="client-pic img-fluid" src="img/pessoa.png" alt="Second slide" width=90rem>
-              <div class="avaliacao">
-                <p>Ótimo atendimento.</p>
-                <h4 class="autor">Bruno Carrilho de Castro</h4>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Controladores -->
-          <div>
-            <a class="carousel-control-prev" href="#evaluations" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#evaluations" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </center>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- Quem somos -->
-  <div id="quemsomos">
-    <div class="container">
-
-      <center>
-        <h1>Quem somos</h1>
-      </center>
-
-      <div class="row align justify-content-around">
-        <img id="team" src=" img/Team.jpg">
-
-        <div id="resumo">
-          <p>Fundada em 2017, a <strong>Tesla Engenharia</strong> é a empresa júnior do curso de Engenharia
-            Elétrica da
-            Universidade
-            Federal do Tocantins, Campus Palmas. Há 3 anos no mercado, fornece projetos, serviços e consultoria
-            com a
-            qualidade, expertise e profundidade de conhecimento ténico disponibilizados por uma <strong
-              style="text-decoration: none;">Universidade
-              Federal</strong>.
-          </p>
-        </div>
-
+    <!-- Slide -->
+    <div id="portfolio" class="carousel slide" data-ride="carousel">
+      <div class="container">
         <div>
-        </div>
+          <center>
+            <h1 id="title">Nossos últimos projetos</h1>
+          </center>
 
+          <div class="carousel-inner slides">
+            <div class="carousel-item active">
+              <img
+                class="job-image col-xs-12 col-lg-6 float-left img-fluid"
+                src="img/Job.jpg"
+                alt="First slide"
+              />
+              <div>
+                <h2>Projeto fotovoltaico</h2>
+                <h4>Potência: <strong>8,70kWp</strong></h4>
+                <h4>Economia mensal: <strong>R$897,77</strong></h4>
+                <h4>
+                  Economia anual: <strong id="economia">R$10.733,28</strong>
+                </h4>
+                <h4>Qtd. de placas: <strong>26</strong></h4>
+                <p>
+                  Projetamos um sistema de geração distribuida de energia solar
+                  para a SOLUA em Miracema (TO). Com a energia gerada, os
+                  proprietários deixaram de se preocupar com a conta de luz e
+                  ainda tiveram a opção de abatar também a conta de energia de
+                  um apartamento localizado em Palams (TO)
+                </p>
+                <a href="contato.html" id=" call_to_action"
+                  >Solicitar um orçamento grátis</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="job-image col-xs-12 col-lg-6 float-left img-fluid"
+                src="img/Fluminense.png"
+                alt="Second slide"
+              />
+              <div class="col-xs-12 col-lg-6 float-right">
+                <h2>Projeto elétrico</h2>
+                <p>
+                  Realizamos o projeto elétrico da Escolinha do Fluminense em
+                  Palmas (TO). O objetivo foi reformar toda a instalação da
+                  escolinha para garantir a eficiência e, sobretudo, a
+                  <stroke>segurança</stroke> dos alunos.
+                </p>
+                <a href="contato.html" id=" call_to_action"
+                  >Solicitar um orçamento grátis</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="job-image col-xs-12 col-lg-6 float-left img-fluid"
+                src="img/Medição agrupada.png"
+                alt="Second slide"
+              />
+              <div class="col-xs-12 col-lg-6 float-right">
+                <h2>Projeto de medição agrupada</h2>
+                <p>
+                  Realizamos o projeto de medição agrupada em um conjunto de
+                  kitnets em Palmas (TO). Dentre os serviços inclusos no
+                  portfolio da <stroke>Tesla Engenharia</stroke>, este é o
+                  responsável pelo projeto que irá garantir a regulamentação
+                  frente à concessionária de energia local para o fornecimentos
+                  a multiplas unidades consumidoras, sendo também necessário
+                  para o incio do fornecimento de energia.
+                </p>
+                <a href="contato.html" id=" call_to_action"
+                  >Solicitar um orçamento grátis</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="carousel-control-prev"
+            href="#portfolio"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#portfolio"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-
-      <center>
-        <h2>Nossos valores</h2>
-      </center>
-
-      <div class="row">
-        <div class="valores col-xs-12 col-md-4 justify-content-around">
-          <h3>Protagonismo</h3>
-          <p>Acreditamos em um papel ativo do aluno em sua educação, sempre em busca de novos conhecimentos e
-            habilidades. Para aprender e se desenvolver, é preciso sair da zona de conforto e aceitar novos desafios. É
-            isso que fazemos aqui na Tesla Enngeharia
-          </p>
-        </div>
-        <div class="valores col-xs-12 col-md-4 justify-content-around">
-          <h3>Compromisso</h3>
-          <p>Somos uma empresa sem fins lucrativos e nosso compromisso é em fazer o melhor trabalho possível,
-            apresentando a melhor solução para nossos clientes e aprendendo durante o processo.</p>
-        </div>
-        <div class="valores col-xs-12 col-md-4 justify-content-around">
-          <h3>Inovação</h3>
-          <p>Buscamos inovar onde possível para conseguir resultados melhores a cada projeto. Procuramos inovar
-            também em nosso modo de fazer as coisas, inclusive com um atendimento pessoal e personalisado, focado em
-            cada cliente e suas necessidades únicas.</p>
-        </div>
-      </div>
-
-
     </div>
 
-  </div>
-  </div>
+    <!-- O que você precisa? -->
+    <div id="oqueprecisa">
+      <div class="container">
+        <center>
+          <h1>O que você precisa?</h1>
+        </center>
 
- <!-- Footer -->
+        <!-- Serviços -->
+        <div class="row">
+          <div id="SPDA" class="col-xs-12 col-lg-6 d-flex service">
+            <div class="col-2">
+              <img class="img-fluid" src="img/raio.png" height="40rem" />
+            </div>
+            <div>
+              <h3 class="servico">Proteção contra descargas elétricas</h3>
+              <p class="servico_descricao">
+                O Tocantins é o estado com maior incidência de raios em todo o
+                país, o que representa um grande risco a estruturas,
+                equipamentos e pessoas. Por isso, é importante possuir um
+                Sistema de Proteção Contra Descargas Elétricas eficiente e bem
+                projetado.
+              </p>
+            </div>
+          </div>
+
+          <div id="Projeto Elétrico" class="col-xs-12 col-lg-6 d-flex service">
+            <div class="col-2">
+              <img
+                class="img-fluid"
+                src="img/projeto-eletrico.png"
+                height="40rem"
+              />
+            </div>
+            <div>
+              <h3 class="servico">Projeto elétrico</h3>
+              <p class="servico_descricao">
+                O projeto elétrico é responsável por planejar toda sua
+                instalação e garantir sua segurança e durabilidade; revine
+                acidentes, futuros problemas e o desperdício de energia e
+                dinheiro. A Tesla Engenharia realiza projetos elétricos de
+                instalações residenciais e comerciais personalizado a suas
+                necessidades.
+              </p>
+            </div>
+          </div>
+
+          <div id="Energia solar" class="col-xs-12 col-lg-6 d-flex service">
+            <div class="col-2">
+              <img class="img-fluid" src="img/sol.png" height="40rem" />
+            </div>
+            <div>
+              <h3 class="servico">Energia solar</h3>
+              <p class="servico_descricao">
+                Investir em energia solar pode render mais que qualquer
+                investimento em renda fixa. Numa região com uma das tarifas de
+                energia mais caras do país, a Tesla Engenharia te dá a
+                oportunidade de gerar a própria energia e ser livre de
+                preocupações com a conta de luz e bandeiras tarifárias.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="Eficiência energética"
+            class="col-xs-12 col-lg-6 d-flex service"
+          >
+            <div class="col-2">
+              <img class="img-fluid" src="img/eficiencia.png" height="40rem" />
+            </div>
+            <div>
+              <h3 class="servico">Eficiência energética</h3>
+              <p class="servico_descricao">
+                Problemas na instalação elétrica e mau uso dos recursos pode
+                trazer eleveados e desnecessários custos ao consumidor. A Tesla
+                Engenharia pode trabalhar a eficiência energética de seu
+                estabelecimento e ajudar a reduzir suas despesas com a conta de
+                energia.
+              </p>
+            </div>
+          </div>
+
+          <div id="Automação" class="col-xs-12 col-lg-6 d-flex service">
+            <div class="col-2">
+              <img class="img-fluid" src="img/automacao.png" height="40rem" />
+            </div>
+            <div>
+              <h3 class="servico">Automação</h3>
+              <p class="servico_descricao">
+                A Industria 4.0 está revolucionando o modo como produzimos e,
+                métodos antes largamente utilzados, hoje se tornaram infecientes
+                e incapazes de acompanhar o rápido desenvolvimento da
+                tecnologia. Para garantir sua permanência no mercado, é preciso
+                inovar e estar sempre buscando novas maneiras de produzir e
+                resolver problemas. Pensando nisso, a Tesla Engenharia fornece
+                soluções em Automação (industrial e residencial) customizados às
+                suas necessidades.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <center>
+          <button>
+            <a href="contato.html">Solicitar um orçamento grátis</a>
+          </button>
+        </center>
+      </div>
+    </div>
+
+    <!-- O que dizem sobre a Tesla Engenharia? -->
+    <div id="oquedizem">
+      <div id="evaluations" class="carousel slide" data-ride="carousel">
+        <div>
+          <center>
+            <h1>O que dizem sobre a Tesla Engenharia</h1>
+            <div class="carousel-inner slides">
+              <div class="carousel-item active">
+                <img
+                  class="client-pic img-fluid"
+                  src="img/pessoa.png"
+                  alt="First slide"
+                  width="90rem"
+                />
+                <div class="avaliacao">
+                  <p>
+                    A Tesla presta um bom serviço: ótimo atendimento, cumpre
+                    rigorosamente os prazos e faz tudo conforme o que propõe
+                    fazer.
+                  </p>
+                  <h4 class="autor">Marlene Laskoski de Alencar</h4>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="client-pic img-fluid"
+                  src="img/pessoa.png"
+                  alt="Second slide"
+                  width="90rem"
+                />
+                <div class="avaliacao">
+                  <p>Ótimo atendimento.</p>
+                  <h4 class="autor">Bruno Carrilho de Castro</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controladores -->
+            <div>
+              <a
+                class="carousel-control-prev"
+                href="#evaluations"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#evaluations"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <div>
       <div id="footer">
         <div class="container">
@@ -341,7 +375,11 @@
               >
                 <img class="icon" src="img/linkedin.png" height="18rem" />
               </a>
-              <a id="whatsapp" href="https://wa.me/556392057905" target="_blank">
+              <a
+                id="whatsapp"
+                href="https://wa.me/556392057905"
+                target="_blank"
+              >
                 <img class="icon" src="img/whatsapp.png" height="18rem" />
               </a>
               <a id="telefone" href="tel:(63)+99103-4274" target="_blank"
@@ -361,17 +399,20 @@
       </div>
     </div>
 
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
