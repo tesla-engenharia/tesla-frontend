@@ -7,7 +7,7 @@ $theme-colors: ("teslaBlue": #111227,
 
 /* Fonte para todo o site */
 html {
-  font-family: Robotom sans-serif;
+  font-family: Roboto, sans-serif;
 
   h1 {
     font-size: 2em;
@@ -316,7 +316,7 @@ html {
     padding-left: 0rem;
     padding-right: 0rem;
     padding-bottom: 1rem;
-    height: 22rem;
+    max-width: 100%;
   }
 
   h1 {
@@ -583,11 +583,12 @@ html {
     h3 {
       text-align: center;
       color: #c00000;
+      font-size: 1.5rem;
     }
 
     p {
-      font-size: 0.8rem;
-      line-height: 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
     }
   }
 
@@ -751,6 +752,11 @@ html {
     }
   }
 
+}
+
+#resumo {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #footer {

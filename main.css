@@ -2,7 +2,7 @@
 /* Adicionando cores da identidade visual Tesla Engenharia */
 /* Fonte para todo o site */
 html {
-  font-family: Robotom sans-serif;
+  font-family: Roboto, sans-serif;
 }
 html h1 {
   font-size: 2em;
@@ -270,7 +270,7 @@ html strong {
   padding-left: 0rem;
   padding-right: 0rem;
   padding-bottom: 1rem;
-  height: 22rem;
+  max-width: 100%;
 }
 #portfolioPage h1 {
   font-weight: bold;
@@ -485,10 +485,11 @@ html strong {
 #quemsomos .valores h3 {
   text-align: center;
   color: #c00000;
+  font-size: 1.5rem;
 }
 #quemsomos .valores p {
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 #quemsomos #team {
   padding-bottom: 3rem;
@@ -631,6 +632,11 @@ html strong {
     display: block;
     visibility: visible;
   }
+}
+
+#resumo {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #footer {
