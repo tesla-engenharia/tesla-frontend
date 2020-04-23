@@ -65,7 +65,7 @@ html strong {
   padding-bottom: 2rem;
   background-color: #0b0c1d;
   background-image: url(img/tstroke.png);
-  background-size: 35rem;
+  background-size: 32rem;
   background-repeat: no-repeat;
   background-position: bottom right;
   border-top: 1px solid #28293a;
@@ -73,7 +73,7 @@ html strong {
   /* Estilizando o checkbox*/
 }
 #contato p {
-  padding-bottom: 1.2rem;
+  padding-bottom: 0rem;
   text-justify: left;
 }
 #contato img {
@@ -83,7 +83,7 @@ html strong {
   background-color: #c00000;
   border: 0px;
   border-radius: 0.3rem;
-  width: 32rem;
+  width: 100%;
 }
 #contato button a {
   text-decoration: none;
@@ -92,7 +92,7 @@ html strong {
 }
 #contato select {
   height: 2rem;
-  width: 32rem;
+  width: 100%;
   border: none;
   border-radius: 3px;
   margin-bottom: 0.3rem;
@@ -101,7 +101,7 @@ html strong {
 }
 #contato textarea {
   border: none;
-  width: 32rem;
+  width: 100%;
   border-radius: 3px;
   margin-bottom: 0.3rem;
   padding-left: 1rem;
@@ -109,12 +109,16 @@ html strong {
 }
 #contato input {
   height: 2rem;
-  width: 32rem;
+  width: 100%;
   border: none;
   border-radius: 3px;
   margin-bottom: 0.3rem;
   color: #090b1a;
   padding-left: 1rem;
+  display: flex;
+}
+#contato form {
+  padding-top: 1rem;
 }
 #contato label {
   color: #bbb;
