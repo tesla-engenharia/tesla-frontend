@@ -70,6 +70,7 @@ html strong {
   background-position: bottom right;
   border-top: 1px solid #28293a;
   border-bottom: 1px solid #28293a;
+  margin-right: 0px;
   /* Estilizando o checkbox*/
 }
 #contato p {
@@ -84,6 +85,7 @@ html strong {
   border: 0px;
   border-radius: 0.3rem;
   width: 100%;
+  margin-right: 0;
 }
 #contato button a {
   text-decoration: none;
@@ -98,6 +100,7 @@ html strong {
   margin-bottom: 0.3rem;
   color: #090b1a;
   padding-left: 1rem;
+  margin-right: 0;
 }
 #contato textarea {
   border: none;
@@ -106,6 +109,7 @@ html strong {
   margin-bottom: 0.3rem;
   padding-left: 1rem;
   color: #090b1a;
+  margin-right: 0;
 }
 #contato input {
   height: 2rem;
@@ -113,6 +117,7 @@ html strong {
   border: none;
   border-radius: 3px;
   margin-bottom: 0.3rem;
+  margin-right: 0;
   color: #090b1a;
   padding-left: 1rem;
   display: flex;
