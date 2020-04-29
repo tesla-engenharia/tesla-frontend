@@ -321,27 +321,28 @@ html {
   border-bottom: 1px solid #28293a;
 
   img {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     max-width: 100%;
   }
 
   h1 {
     font-weight: bold;
-    margin-bottom: 2rem;
+    padding-bottom: 0em;
     color: #fff;
     text-decoration: underline;
     text-decoration-color: #c00000;
   }
 
+  .project {
+    padding-bottom: 1em;
+    padding-top: 0em;
+  }
+
   .servico {
-    color: #c00000;
+    color: #bbb;
     height: 3em;
     text-align: center;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 0rem;
+    padding: 1em 0em 2em 0em;
 
     h2 {
       color: #bbb;
@@ -349,7 +350,7 @@ html {
   }
 
   h2 {
-    padding-bottom: 0rem;
+    padding-top: 0em;
   }
 
   h4 {
@@ -360,7 +361,7 @@ html {
     color: #bbb;
     text-align: justify;
     text-justify: inter-word;
-    padding-bottom: 3rem;
+    padding-bottom: 1em;
   }
 
   strong {
@@ -388,6 +389,7 @@ html {
   }
 }
 
+
 #portfolio {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -396,20 +398,20 @@ html {
   border-top: 1px solid #28293a;
   border-bottom: 1px solid #28293a;
 
-  .job-image {
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+  img {
+    padding-bottom: 1em;
   }
 
   h1 {
     font-weight: bold;
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
     color: #fff;
   }
 
   h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     color: #fff;
+
   }
 
   h4 {
@@ -516,7 +518,7 @@ html {
 
   p {
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin-bottom: 0.5rem;
     color: #0b0c1d;
   }
@@ -528,6 +530,7 @@ html {
 
   h4 {
     padding-top: 1rem;
+    font-weight: 500;
   }
 }
 
@@ -535,6 +538,7 @@ html {
   background-color: #0b0c1d;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  border-top: 1px solid #28293a;
 
   h1 {
     color: #c00000;

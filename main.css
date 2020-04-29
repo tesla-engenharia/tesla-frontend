@@ -276,31 +276,31 @@ html strong {
   border-bottom: 1px solid #28293a;
 }
 #portfolioPage img {
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
   max-width: 100%;
 }
 #portfolioPage h1 {
   font-weight: bold;
-  margin-bottom: 2rem;
+  padding-bottom: 0em;
   color: #fff;
   text-decoration: underline;
   text-decoration-color: #c00000;
 }
+#portfolioPage .project {
+  padding-bottom: 1em;
+  padding-top: 0em;
+}
 #portfolioPage .servico {
-  color: #c00000;
+  color: #bbb;
   height: 3em;
   text-align: center;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-bottom: 0rem;
+  padding: 1em 0em 2em 0em;
 }
 #portfolioPage .servico h2 {
   color: #bbb;
 }
 #portfolioPage h2 {
-  padding-bottom: 0rem;
+  padding-top: 0em;
 }
 #portfolioPage h4 {
   color: #bbb;
@@ -309,7 +309,7 @@ html strong {
   color: #bbb;
   text-align: justify;
   text-justify: inter-word;
-  padding-bottom: 3rem;
+  padding-bottom: 1em;
 }
 #portfolioPage strong {
   color: #fff;
@@ -339,17 +339,16 @@ html strong {
   border-top: 1px solid #28293a;
   border-bottom: 1px solid #28293a;
 }
-#portfolio .job-image {
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+#portfolio img {
+  padding-bottom: 1em;
 }
 #portfolio h1 {
   font-weight: bold;
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
   color: #fff;
 }
 #portfolio h2 {
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   color: #fff;
 }
 #portfolio h4 {
@@ -440,7 +439,7 @@ html strong {
 }
 #oquedizem p {
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 0.5rem;
   color: #0b0c1d;
 }
@@ -450,12 +449,14 @@ html strong {
 }
 #oquedizem h4 {
   padding-top: 1rem;
+  font-weight: 500;
 }
 
 #quemsomos {
   background-color: #0b0c1d;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  border-top: 1px solid #28293a;
   /* Team slide */
   /* MD */
   /* LG */
