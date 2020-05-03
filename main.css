@@ -268,8 +268,9 @@ html strong {
   }
 }
 
+/* Página Porfolio.html*/
 #portfolioPage {
-  background-color: #111227;
+  background-color: #0b0c1d;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #28293a;
@@ -283,8 +284,6 @@ html strong {
   font-weight: bold;
   padding-bottom: 0em;
   color: #fff;
-  text-decoration: underline;
-  text-decoration-color: #c00000;
 }
 #portfolioPage .project {
   padding-bottom: 1em;
@@ -331,6 +330,7 @@ html strong {
   text-decoration-color: #c00000;
 }
 
+/* Lista de serviços na página inicial*/
 #portfolio {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -454,15 +454,14 @@ html strong {
 
 #quemsomos {
   background-color: #0b0c1d;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
   border-top: 1px solid #28293a;
   /* Team slide */
   /* MD */
   /* LG */
 }
 #quemsomos h1 {
-  color: #c00000;
+  color: #fff;
   font-weight: bold;
   padding-bottom: 3rem;
 }
@@ -647,6 +646,73 @@ html strong {
   }
 }
 
+#mej {
+  background-color: #0b0c1d;
+  margin: 0;
+}
+#mej h1 {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+#tesla {
+  padding: 3rem 2rem 2rem 3rem;
+}
+#tesla h1 {
+  color: #0b0c1d;
+  font-weight: bold;
+  text-align: left;
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+#tesla h2 {
+  color: #0b0c1d;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+#tesla img {
+  height: 5em;
+  padding-right: 2rem;
+  padding-left: 5em;
+}
+#tesla p {
+  color: #0b0c1d;
+  font-weight: 450;
+  padding-bottom: 0rem;
+}
+#tesla stroke {
+  text-decoration: underline;
+  text-decoration-color: #c00000;
+  font-weight: bold;
+}
+#tesla a {
+  text-decoration: none;
+  color: #c00000;
+}
+
+#brasil {
+  text-align: right;
+}
+#brasil h1 {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  text-align: right;
+}
+#brasil h2 {
+  color: #bbb;
+}
+#brasil img {
+  height: 5em;
+  padding-right: 2rem;
+  padding-left: 5em;
+}
+#brasil p {
+  padding-bottom: 0rem;
+}
+
 #resumo {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -666,7 +732,7 @@ html strong {
 }
 
 #logoFooter {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 #icons {
