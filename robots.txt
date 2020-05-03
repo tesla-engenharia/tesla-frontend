@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: blog.html
 Disallow: blog-single.html
+Disallow: index.html
 
 Sitemap: https://www.teslaej.com/sitemap.xml
