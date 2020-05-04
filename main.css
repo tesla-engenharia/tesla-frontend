@@ -714,6 +714,22 @@ html strong {
   padding-bottom: 0rem;
 }
 
+#custom404 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  border-top: 1px solid #28293a;
+  background-color: #0b0c1d;
+  background-image: url(img/tstroke.png);
+  background-size: 45rem;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: #fff;
+}
+#custom404 a {
+  text-decoration: none;
+  color: #c00000;
+}
+
 #resumo {
   padding-left: 1rem;
   padding-right: 1rem;
