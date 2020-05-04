@@ -1,5 +1,6 @@
 /* Adicionando cores da identidade visual Tesla Engenharia */
-$theme-colors: ("teslaBlue": #111227,
+$theme-colors: (
+  "teslaBlue": #111227,
   "teslaRed": #c00000,
   "teslaDarkBlue": #0b0c1d,
   "teslaGrey": #bbbbbb,
@@ -51,7 +52,6 @@ html {
   margin-right: 0.5rem;
   margin-right: 1;
 }
-
 
 /* Personalisação da Área do cliente */
 #areadocliente a {
@@ -138,7 +138,6 @@ html {
     color: #090b1a;
     padding-left: 1rem;
     display: flex;
-
   }
 
   form {
@@ -155,7 +154,6 @@ html {
 
   /* Estilizando o checkbox*/
   @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-
     input[type="checkbox"],
     input[type="radio"] {
       --active: #275efe;
@@ -207,7 +205,7 @@ html {
           --bc: var(--border);
         }
 
-        &+label {
+        & + label {
           cursor: not-allowed;
         }
       }
@@ -236,7 +234,7 @@ html {
         }
       }
 
-      &+label {
+      & + label {
         font-size: 14px;
         line-height: 21px;
         display: inline-block;
@@ -411,7 +409,6 @@ html {
   h2 {
     padding-bottom: 0rem;
     color: #fff;
-
   }
 
   h4 {
@@ -599,9 +596,12 @@ html {
 
   /* Team slide */
   @media (min-width: 768px) and (max-width: 991px) {
-
     /* Show 4th slide on md if col-md-4*/
-    .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-md-4.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -33.3333%;
@@ -613,9 +613,11 @@ html {
   }
 
   @media (min-width: 576px) and (max-width: 768px) {
-
     /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-sm-6.carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -50%;
@@ -632,12 +634,15 @@ html {
     }
 
     /* show 2 items */
-    .carousel-inner .active+.carousel-item {
+    .carousel-inner .active + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item {
       transition: none;
     }
 
@@ -647,9 +652,9 @@ html {
     }
 
     /* left or forward direction */
-    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left+.carousel-item,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item {
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
@@ -666,9 +671,9 @@ html {
     }
 
     /* right or prev direction */
-    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right+.carousel-item,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item {
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -679,13 +684,15 @@ html {
 
   /* MD */
   @media (min-width: 768px) {
-
     /* show 3rd of 3 item slide */
-    .carousel-inner .active+.carousel-item+.carousel-item {
+    .carousel-inner .active + .carousel-item + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item {
       transition: none;
     }
 
@@ -695,14 +702,20 @@ html {
     }
 
     /* left or forward direction */
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
     }
 
     /* right or prev direction */
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -713,18 +726,26 @@ html {
 
   /* LG */
   @media (min-width: 991px) {
-
     /* show 4th item */
-    .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
       display: block;
     }
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       transition: none;
     }
 
     /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-inner
+      .active.col-lg-3.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: absolute;
       top: 0;
       right: -25%;
@@ -735,14 +756,22 @@ html {
     }
 
     /* left or forward direction */
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
     }
 
     /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
       position: relative;
       transform: translate3d(100%, 0, 0);
       visibility: visible;
@@ -791,7 +820,6 @@ html {
     padding-left: 5em;
   }
 
-
   p {
     color: #0b0c1d;
     font-weight: 450;
@@ -812,7 +840,6 @@ html {
 }
 
 #brasil {
-
   text-align: right;
 
   h1 {
@@ -835,12 +862,10 @@ html {
   p {
     padding-bottom: 0rem;
   }
-
-
 }
 
 #custom404 {
-  padding-top: 11rem;
+  padding-top: 11.5rem;
   padding-bottom: 11rem;
   border-top: 1px solid #28293a;
   background-color: #0b0c1d;
@@ -852,7 +877,7 @@ html {
 
   a {
     text-decoration: none;
-    color: #c00000
+    color: #c00000;
   }
 }
 
