@@ -277,7 +277,7 @@ html strong {
   border-bottom: 1px solid #28293a;
 }
 #portfolioPage img {
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   max-width: 100%;
 }
 #portfolioPage h1 {
