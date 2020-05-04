@@ -504,7 +504,6 @@ html strong {
 }
 #quemsomos #team {
   padding-bottom: 3rem;
-  max-width: 100%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #quemsomos {
