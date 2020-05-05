@@ -735,7 +735,7 @@ html strong {
 }
 
 #footer {
-  white-space: no-wrap;
+  white-space: nowrap;
   padding-top: 1rem;
   background-color: #0b0c1d;
   border-top: 1px solid #28293a;
